@@ -13,5 +13,13 @@ namespace baitap3.Controllers
         {
             return View();
         }
+        [HttpPost]
+        public ActionResult Index(string sothunhat,string sothuhai)
+        {
+            return View();
+
+        }
+        
     }
+
 }
