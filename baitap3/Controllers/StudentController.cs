@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using baitap3.Models;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
-using baitap3.Models;
 
 namespace baitap3.Controllers
 {
@@ -13,14 +10,10 @@ namespace baitap3.Controllers
         // GET: Student
         public ActionResult Index()
         {
-            var model = db.Students.ToList()''
-            return View(Modol)
+            var model = db.Students.ToList();
+            return View(model);
         }
-        [HttpPost]
-        public ActionResult Index()
-        {
-            return View();
+     
         }
     }
 
-}
