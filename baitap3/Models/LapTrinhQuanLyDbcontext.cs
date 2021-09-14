@@ -11,6 +11,7 @@ namespace baitap3.Models
         public LapTrinhQuanLyDbcontext() : base("name=LTQLDbContext")
         { }
         public virtual DbSet<Student> Students { get; set; }
+        public virtual DbSet<Person> Persons { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             
